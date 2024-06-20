@@ -14,7 +14,7 @@ public class Calculatrice {
             Expression e = new Multiplication(new Division(new Nombre(21),new Nombre(3)),new Division(new Nombre(50),new Nombre(10))) ;
             System.out.println(e + " = " + e.valeur()) ; // affiche ((21 / 3) x (50 / 10)) = 35
         }
-        catch(ArithmethicException e){
+        catch(ArithmeticException e){
             System.out.println("Division par zéro impossible");
         }
         
